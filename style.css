@@ -1,0 +1,132 @@
+/* style.css - Retro browns with modern industrial/futuristic design */
+
+body {
+    background-color: #D2B48C; /* Tan/beige for retro computer feel */
+    color: #3E2723; /* Dark brown text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6D4C41; /* Medium brown for header */
+    color: #F5F5DC; /* Beige text */
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #8B4513; /* Saddlebrown accent */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-style: italic;
+}
+
+nav {
+    background-color: #8B4513; /* Saddlebrown nav bar */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #F5F5DC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px; /* Modern rounded corners */
+}
+
+nav a:hover {
+    background-color: #F5F5DC;
+    color: #6D4C41;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace; /* Mono font for retro touch */
+    color: #6D4C41;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 10px;
+}
+
+.posts, .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post, .note, .book, .project {
+    background-color: #F5F5DC; /* Light beige cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Futuristic subtle shadow */
+    transition: transform 0.2s;
+}
+
+.post:hover, .note:hover, .book:hover, .project:hover {
+    transform: translateY(-5px); /* Modern hover lift */
+}
+
+.date {
+    font-size: 0.8em;
+    color: #8B4513;
+    margin: 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #F5F5DC;
+    background-color: #6D4C41;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #8B4513;
+}
+
+.library-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: #D2B48C; /* Placeholder if no image */
+}
+
+footer {
+    background-color: #6D4C41;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
